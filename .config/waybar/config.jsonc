@@ -1,0 +1,27 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "spacing": 0, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "custom/arch"
+    ],
+    "modules-center": [
+	"hyprland/workspaces"
+    ],
+    "modules-right": [
+        "idle_inhibitor",
+        "pulseaudio",
+        "network",
+        "memory",
+        "battery",
+        "clock"
+    ],
+
+    //Modules configuration
+
+    "include": [
+		"~/.config/waybar/modules.json"
+	]
+}

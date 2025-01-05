@@ -1,0 +1,79 @@
+{
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": true,
+        "tooltip-format": "btw",
+	"on-click": "wlogout"
+    },
+
+
+    "hyprland/workspaces": {
+    	"format": "<sub>{icon}</sub>\n{windows}", 
+	"format-window-separator":" | ",
+	"window-rewrite-default": "",
+	"window-rewrite": {
+		"class<kitty>":"",
+		"class<firefox>":"󰈹"
+	}
+	
+    },
+
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "pulseaudio": {
+        "format": "| {icon}   {volume} %",
+        "format-bluetooth": "{icon} {volume}%  {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "|    {essid}",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+	"on-click": "kitty -e nmtui"
+	 
+    },
+    "memory": {
+        "format": "| RAM: {}%",
+	"tooltip": true
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "| {icon}{capacity}%",
+        "format-full": "| {icon}  {capacity}%",
+        "format-charging": "|   {capacity}%",
+        "format-plugged": "|   {capacity}%",
+        "format-alt": "| {time}  {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+	"tooltip": true,
+        "format": "| {:%H:%M} ",
+        "tooltip-format": "{:%c}"
+
+    }
+
+}
