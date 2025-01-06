@@ -54,6 +54,8 @@
 /* =============================== */
 /* Bar Styling */
 #waybar {
+  /*background-color: red;*/
+
   background: transparent;
   color: @text;
 }
