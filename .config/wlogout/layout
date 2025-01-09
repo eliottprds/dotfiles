@@ -1,36 +1,36 @@
 {
   "label": "lock",
   "text": "Lock",
-  "action": "~/.config/wlogout/actions lock",
+  "action": "hyprlock",
   "keybind": "l"
 }
 {
   "label": "hibernate",
   "text": "Hibernate",
-  "action": "~/.config/wlogout/actions hibernate",
+  "action": "systemctl hibernate",
   "keybind": "h"
 }
 {
   "label": "suspend",
   "text": "Suspend",
-  "action": "~/.config/wlogout/actions suspend",
+  "action": "systemctl suspend",
   "keybind": "u"
 }
 {
   "label": "reboot",
   "text": "Reboot",
-  "action": "~/.config/wlogout/actions reboot",
+  "action": "systemctl reboot",
   "keybind": "r"
 }
 {
   "label": "logout",
   "text": "Logout",
-  "action": "~/.config/wlogout/actions logout",
+  "action": "systemctl logout",
   "keybind": "e"
 }
 {
   "label": "shutdown",
   "text": "Shutdown",
-  "action": "~/.config/wlogout/actions shutdown",
+  "action": "systemctl shutdown now",
   "keybind": "s"
 }
