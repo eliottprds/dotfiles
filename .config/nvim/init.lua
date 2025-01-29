@@ -10,6 +10,14 @@ vim.opt.cursorline = true      -- Surligne la ligne courante
 vim.opt.wrap = false           -- Désactive le retour à la ligne automatique
 vim.opt.scrolloff = 8          -- Laisse un espace en haut et en bas lors du défilement
 vim.opt.clipboard = "unnamedplus" -- Partage le presse-papier avec le système
+-- Activer le retour à la ligne uniquement pour les fichiers Markdown
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown, text",
+    callback = function()
+        vim.opt_local.wrap = true         -- Activer le retour à la ligne
+        vim.opt_local.linebreak = true    -- Couper les lignes proprement (pas au milieu des mots)
+    end
+})
 
 -- Lazy setup:
 

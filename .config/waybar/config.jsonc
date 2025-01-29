@@ -87,7 +87,7 @@
         "tooltip-format-wifi": "{icon} {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{icon} {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "{icon} Disconnected",
-        "on-click-right": "nm-connection-editor",
+        "on-click": "kitty -e nmtui",
         "format-icons": {
             "ethernet": "",
             "disconnected": "⚠",
