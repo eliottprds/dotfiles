@@ -1,7 +1,7 @@
 # Start Hyprland with uwsm
 
 if uwsm check may-start && uwsm select; then
-	exec systemd-cat -t uwsm_start uwsm start default
+	exec uwsm start hyprland.desktop
 fi
 
 # Path to your Oh My Zsh installation.
@@ -45,3 +45,11 @@ export LC_ALL=fr_FR.UTF-8
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/.p10k.zsh.
 [[ ! -f ~/.dotfiles/.p10k.zsh ]] || source ~/.dotfiles/.p10k.zsh
 export GTK_THEME=Catppuccin-Dark
+echo "
+TO DO:
+		Finir TP402 (ajouter multi-calculs)
+        Finir TP powershell
+ID:
+		Happy Weels 3D ?? OMG 
+"
+systemctl --user reload waybar.service
