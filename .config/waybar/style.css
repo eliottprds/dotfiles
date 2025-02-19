@@ -50,11 +50,10 @@
 
 /* =============================== */
 /* Style commun aux modules principaux */
-#clock, 
 #backlight, 
-#workspaces, 
+#workspaces
 #window, 
-#battery, 
+#battery,
 #pulseaudio, 
 #network, 
 #cpu, 
@@ -63,7 +62,7 @@
 #temperature {
   background-color: @surface0;
   color: @text;
-  border-radius: 10px;
+  
   padding: 0.5rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
   margin: 10px 10px 0 0;
@@ -90,6 +89,7 @@
 /* =============================== */
 /* Workspaces */
 #workspaces {
+  border-radius: 5px;
   padding: 0 8px;
 }
 #workspaces * {
@@ -135,8 +135,8 @@
 
 /* CPU : on annule la rondeur côté droit et ajuste le padding */
 #cpu {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   margin-right: 0;
   padding-right: 5px;
 }
@@ -146,7 +146,7 @@
 #temperature {
   border-radius: 0;
   margin-right: 0;
-  padding: 0 5px;
+  padding: 0 3px;
 }
 /* Couleur spécifique pour ces modules */
 #cpu, #memory, #temperature {
@@ -156,18 +156,17 @@
 /* Disque : suppression de la rondeur côté gauche et padding personnalisé */
 #disk {
   color: @peach;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding-left: 5px;
   padding-right: 1rem;
 }
 
 /* =============================== */
 /* Modules Réseau et Backlight */
-#network,
 #backlight {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; /* Need for rounded border on first module */
   margin-right: 0;
   padding-right: 5px;
 }
@@ -180,7 +179,7 @@
 #pulseaudio {
   color: @mauve;
   border-radius: 0;
-  margin-right: 0;
+  margin-right: 0px;
   padding: 0 5px;
 }
 
@@ -190,7 +189,8 @@
   color: @green;
   border-radius: 0;
   margin-right: 0;
-  padding: 0 5px;
+  padding-left: 3px;
+  padding-right: 0px;
 }
 #battery.charging {
   color: @green;
@@ -201,6 +201,11 @@
 #battery.critical:not(.charging) {
   color: @red;
   animation: blink 1s linear infinite alternate;
+}
+
+#clock {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* =============================== */

@@ -45,13 +45,13 @@
     "cpu": {
         "format": " {usage}%",
         "tooltip": true,
-        "on-click": "kitty --start-as=fullscreen --title all_is_kitty sh -c 'btop'",
+        "on-click": "kitty -c 'btop'",
         "interval": 2
     },
     "memory": {
         "format": " {}%",
         "tooltip": true,
-        "on-click": "kitty --start-as=fullscreen --title all_is_kitty sh -c 'btop'",
+        "on-click": "kitty sh -c 'btop'",
         "interval": 2
     },
     "temperature": {
@@ -64,13 +64,13 @@
             ""
         ],
         "tooltip": true,
-        "on-click": "kitty --start-as=fullscreen --title all_is_kitty sh -c 'btop'",
+        "on-click": "kitty  sh -c 'btop'",
         "interval": 2
     },
     "disk": {
         "format": " {percentage_used}% ({free})",
         "tooltip": true,
-        "on-click": "kitty --start-as=fullscreen --title all_is_kitty sh -c 'btop'",
+        "on-click": "kitty sh -c 'fdisk -l'",
         "interval": 2
     },
     "hyprland/window": {
