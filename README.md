@@ -7,7 +7,7 @@ This repository contains my personal configuration files for my Linux environmen
 Currently, this repository includes the following configurations:
 - **Hyprland**: window manager
 - **Waybar**: status bar
-- **zsh** + Oh My Zsh: shell and customization
+- **zsh** + Oh My Zsh + p10k: shell and customization
 - **Neovim**
 
 ## 🚀 3. To do
