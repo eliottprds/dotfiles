@@ -1,0 +1,64 @@
+# source https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
+
+[global]
+
+    monitor = 0
+    follow = mouse
+    enable_posix_regex = false
+    width = (0,400) 
+    height = (0,450)
+    notification_limit = 4
+    origin = top-right
+    offset= (5,5)
+    scale = 0
+    progress_bar = true
+    progress_bar_max_width = 200 
+    progress_bar_min_width = 200
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_corner_radius = 2
+    icon_corner_radius = 1
+    icon_corners = all
+    indicate_hidden = true
+    transparency = 0
+    padding = 7
+    text_icon_padding = 10
+    frame_width = 1
+    gap_size = 2
+    sort = true
+    layer = overlay
+    force_xwayland = false
+    font = "Hack Nerd Font 10"
+    line_height = 0
+    format = "<span foreground='#87B2F795'><b>%s</b></span>\n%b"
+    vertical_alignment = center
+    show_age_threshold = 60
+    ignore_newline = false
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = true
+    corner_radius = 5
+    mouse_left_click = do_action, open_url, close_current
+    mouse_right_click = context
+
+[urgency_low]
+    frame_color = "#87B2F750"
+    background = "#181D2A"
+    foreground = "#ffffff"
+    highlight = "#87B2F795"
+    timeout = 5
+
+[urgency_normal]
+    frame_color = "#87B2F750"
+    background = "#181D2A"
+    foreground = "#ffffff"
+    highlight = "#87B2F795"
+    timeout = 20
+
+[urgency_critical]
+    frame_color = "#A6E3A150"
+    background = "#181D2A"
+    foreground = "#ffffff"
+    highlight = "#87B2F795"
+    timeout = 0
+
