@@ -50,8 +50,9 @@
 
 /* =============================== */
 /* Style commun aux modules principaux */
+#clock,
 #backlight, 
-#workspaces
+#workspaces,
 #window, 
 #battery,
 #pulseaudio, 
@@ -62,7 +63,6 @@
 #temperature {
   background-color: @surface0;
   color: @text;
-  
   padding: 0.5rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
   margin: 10px 10px 0 0;
@@ -90,7 +90,7 @@
 /* Workspaces */
 #workspaces {
   border-radius: 5px;
-  padding: 0 8px;
+  padding: 0 0px;
 }
 #workspaces * {
   font-size: 10px;
@@ -102,7 +102,7 @@
   min-height: 14px;
   min-width: 14px;
   margin: 5px 8px;
-  padding: 2px;
+  padding: 0px;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
   box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px; 
 }
