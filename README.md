@@ -12,13 +12,11 @@ Currently, this repository includes the following configurations:
 
 ## 🚀 3. To do
 Planned improvements and additions:
-- [ ] Clean lock screen
-- [ ] Integrate Pywal for better theming
+- [ ] Integrate Pywal for better theming ?
+- [ ] Change Waybar
 - [ ] Notification center
 - [ ] Clipboard history in status bar or as shortcut
 - [ ] Cheat sheets center for various usages
-- [ ] Dynamic wallpaper
-- [ ] Better workspaces configurations
 
 ## ⚠️ 4. Disclaimer
 These configurations are tailored to my personal use. They may not be suitable for all users and might require adjustments depending on your environment.
